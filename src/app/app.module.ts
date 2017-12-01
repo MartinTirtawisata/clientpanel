@@ -18,8 +18,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 // Create Routes
 
 const appRoutes: Routes = [
-  {path:'', component: DashboardComponent}
-  {path:'register', component: RegisterComponent}
+  {path:'', component: DashboardComponent},
+  {path:'register', component: RegisterComponent},
   {path:'login', component: LoginComponent}
 ];
 
