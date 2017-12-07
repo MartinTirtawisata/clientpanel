@@ -29,4 +29,12 @@ export class ClientService {
     this.client = this.db.object('/clients/'+id).valueChanges();
     return this.client;
   }
+
+  updateClient(id:string, client:Client){
+    return this.clientsRef.update(id, client);
+  }
+
+  deleteClient(id:string){
+    return this.clientsRef.remove(id);
+  }
 }
